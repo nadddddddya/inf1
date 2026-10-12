@@ -1,0 +1,19 @@
+from random import randint 
+
+minRange = -10
+maxRange = 10
+
+x = [randint(minRange, maxRange) for i in range(10)]
+print (x)
+
+n = int(input("podaj n: "))
+if n == 0:
+    print("Nie można dzielić przez zero.")
+else:
+    counter = 0
+    for i in range(len(x)):
+        if x[i] % n == 0:
+            counter += 1
+    print("Liczba wystąpień liczb podzielnych przez " + str(n) + " w tablicy to: " + str(counter))
+
+

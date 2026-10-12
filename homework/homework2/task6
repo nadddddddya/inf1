@@ -1,0 +1,10 @@
+text = input("podaj liczbe #1: " )
+i = 1 
+y = []
+while text != 'stop' and text != 'STOP':
+    if int(text) % 2 == 0:
+        y.append(int(text))
+    text = input ("podaj liczbe #" + str(i + 1) + ": " )
+    i += 1
+print ("znaleziono  liczby parzyste") 
+print("Liczby parzyste w tablicy to: " + str(y))

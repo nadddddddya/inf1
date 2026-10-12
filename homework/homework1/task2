@@ -1,0 +1,4 @@
+n = int(input("Podaj n: "))
+
+for i in range(n):
+    print("Kocham programować")

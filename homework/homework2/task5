@@ -1,0 +1,12 @@
+from random import randint 
+
+minRange = -10
+maxRange = 10
+
+x = [randint(minRange, maxRange) for i in range(10)]
+print (x)
+
+n = int(input("podaj n: "))
+
+y = [i for i in x if i < n]
+print("Liczby mniejsze niż " + str(n) + " w tablicy to: " + str(y))

@@ -1,0 +1,27 @@
+from random import randint 
+
+minRange = -10
+maxRange = 10
+
+x = []
+for i in range(10):
+    x.append(randint(minRange, maxRange))
+
+print (x)
+
+minValue = x[0] 
+maxValue = x[0]
+for i in range(1, len(x)):
+    if x[i] < minValue:
+        minValue = x[i]
+    if x[i] > maxValue:
+        maxValue = x[i]
+print("Najmniejsza liczba w tablicy to: " + str(minValue))
+print("Największa liczba w tablicy to: " + str(maxValue))
+
+n = int(input("podaj n: "))
+counter = 0
+for i in range(len(x)):
+    if x[i] == n:
+        counter += 1
+print("Liczba wystąpień liczby " + str(n) + " w tablicy to: " + str(counter))

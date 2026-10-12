@@ -1,0 +1,9 @@
+text = input("podaj liczbe #1: " )
+i = 1 
+total = 0
+while text != 'stop' and text != 'STOP':
+
+    total += int(text)
+    text = input ("podaj liczbe #" + str(i + 1) + ": " )
+    i += 1
+print('średnia' + str(i - 1) + ' liczb:', total / (i - 1) if i > 1 else 0)
