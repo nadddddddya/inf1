@@ -1,0 +1,11 @@
+import math
+
+list = [4, 5, 9, 10, 16, 20, 25]
+list2 = []
+
+for x in list:
+    print(math.sqrt(x))
+    if (pow(math.sqrt(x), 2 )) == x:
+        list2.append(x)
+
+print(list2)

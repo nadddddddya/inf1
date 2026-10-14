@@ -1,0 +1,15 @@
+from random import randint
+minRange = -10
+maxRange = 10
+list = [randint(minRange, maxRange) for i in range(10)]
+print(list)
+
+suma = 0
+
+for x in list:
+    suma += 1 / x
+
+srednia = len(list) / suma
+
+print("srednia wynosi:" + str(srednia))
+
