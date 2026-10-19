@@ -1,0 +1,39 @@
+AAA = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+print(AAA)
+
+suma = sum(1/x for x in AAA)
+srednia = len(AAA) / suma
+
+print("srednia harmoniczna wynosi:" + str(srednia))
+
+y = []
+
+for x in AAA:
+    if x % 2 != 0:
+        y.append(x)
+
+print("Nieparzyste liczby:", y)
+
+n = int(input("podaj n: "))
+
+for i in range(len(AAA)):
+    if AAA[i] == n:
+        print(i) 
+
+ile = 0
+
+for x in AAA:
+    pierwsza = True
+
+    if x < 2:
+        pierwsza = False
+    else:
+        for i in range(2, x):
+            if x % i == 0:
+                pierwsza = False
+                break
+
+    if pierwsza:
+        ile += 1
+
+print("ilosc liczb pierwszych:", ile)

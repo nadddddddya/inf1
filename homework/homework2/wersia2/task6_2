@@ -1,10 +1,12 @@
 import math
+#Przepisz do 2 tablicy liczby, z których pierwiastek jest liczbą całkowitą.
 
 list = [4, 5, 9, 10, 16, 20, 25]
 list2 = []
 
 for x in list:
     print(math.sqrt(x))
+    print(pow(math.sqrt(x), 2 ))
     if (pow(math.sqrt(x), 2 )) == x:
         list2.append(x)
 
